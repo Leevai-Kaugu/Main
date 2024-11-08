@@ -1,0 +1,156 @@
+@media (min-width: 1115px) {
+  #sideBar{
+    border-left: 3px solid #1E1E1E;
+    width: 40%;
+    padding: 8px;
+  }
+  #monthlyCtx{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #monthlyReminders{
+    display: flex;
+    flex-direction: column;
+  }
+  #reminders{
+    width: 100%;
+  }
+  #charts{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+  #green{
+    width: 100%;
+    margin: 5px;
+  }
+  #timerCounter{
+    width: 100%;
+    margin: 5px;
+  }
+  #weekly-rate{
+    width: 100%;
+    padding: 5px;
+  }
+  #daily-rate{
+    width: 100%;
+  }
+  #current-rate{
+    width: 100%;
+  }
+  #actual{
+    width: inherit;
+  }
+}
+
+@media (max-width: 1115px) {
+  #sideBar{
+    border: none;
+    padding: 8px;
+    margin-top: 30px;
+  }
+  #monthlyCtx{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+  }
+  #monthlyReminders{
+    display: flex;
+    flex-direction: row;
+  }
+  #reminders{
+    width: 40%;
+  }
+  #charts{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 40%;
+  }
+  #dailyTargetChart{
+    width: 100%; 
+    height: 100%;
+  }
+  #daily-rate{
+    width: 100%;
+  }
+  #weekly-rate{
+    width: 100%;
+    padding: 5px;
+  }
+  #green{
+    width: 100%;
+    margin: 5px;
+  }
+  #timerCounter{
+    width: 100%;
+    margin: 5px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  #charts{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: fit-content;
+  }
+  #dailyTargetChart{
+    width: 100%; 
+    height: 100%;
+  }
+  #sideBar{
+    border: none;
+    padding: 8px;
+    margin-top: 0px;
+  }
+  #green{
+    width: 50%;
+    height: 100%;
+  }
+}
+
+@media (max-width: 604px) {
+  #content-wrapper{
+    margin-top: 70px;
+  }
+  #green{
+    width: 100%;
+  }
+  #monthlyReminders{
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 375px) {
+  #green{
+    width: 100%;
+  }
+  #content-wrapper{
+    margin-top: 100px;
+  }
+  #weekly-rate{
+    width: 100%;
+    padding: 5px;
+  }
+  #daily-rate{
+    width: 100%;
+  }
+  #monthlyReminders{
+    display: flex;
+    flex-direction: column;
+  }
+  #dailyTargetChart{
+    width: 100%; 
+  }
+  #timerCounter{
+    width: 100%;
+  }
+}

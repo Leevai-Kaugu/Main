@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>Document</title>
+</head>
+<body>
+  <div class="container-lg-fluid min-vh-100 d-flex bg-black" id="container">
+    <nav class="d-none d-sm-flex navbar p-0 border-end border-3 border-dark align-items-start">
+      <div class="d-flex flex-column justify-content-around align-items-center w-100" style="height: 25rem;" id="nav-wrapper">
+        <div class="container-fluid justify-content-center align-items-center">
+          <a class="navbar-brand me-0 align-items-center" href="#">
+            <img src="Assets\Fanaka-logo.png" alt="Logo" width="100" height="100" class=""></a>
+          </a>
+        </div>
+        <div class="container-fluid d-flex flex-column align-items-center">
+          <a class="navbar-brand me-0" href="#">
+            <img src="Assets\Profile-icon.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top"></a>
+          <a class="navbar-brand me-0" href="#">
+            <img src="Assets\Target-icon.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top"></a>
+          <a class="navbar-brand me-0" href="#">
+            <img src="Assets\Setting-Icon.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top"></a>
+        </div>
+        <div class="container-fluid d-flex justify-content-around align-items-center">
+          <a class="navbar-brand me-0" href="#">
+            <img src="Assets\message-icon.png" alt="Logo" width="30" height="30" class=" align-items-center border-top border-3 border-dark pt-4 h-60"></a>
+        </div>
+      </div>
+    </nav>
+    <div class="w-100 d-flex flex-column" id="main-wrapper">
+      <div class="navbar w-100 border-bottom border-3 border-dark m-0 d-none d-sm-flex" id="Fanaka-profile-dashboard">
+        <div class="container justify-content-between">
+          <div>
+            <h1 class="text-primary">Fanaka Dashboard</h1>
+          </div>
+          <div class="navbar-brand me-0">
+            <img src="Assets\notification-icon.png" alt="" width="30" height="30" class="me-3 bg-light rounded-circle p-1">
+            <img src="Assets\Avatar-Placeholder.png" alt="" width="50" height="50" class="p-1 bg-light rounded-circle">
+          </div>
+        </div>
+      </div>
+      <nav class="navbar bg-dark fixed-top border-bottom border-3 border-dark d-block d-sm-none" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand d-flex flex-row" href="#">
+            <img src="Assets\Fanaka-logo.png" alt="Logo" width="40" height="40" class="me-1 d-block d-md-none">
+            <h1 class="text-primary">Fanaka Dashboard</h1>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <img src="Assets\Fanaka-logo.png" alt="Logo" width="40" height="40" class="">
+              <h5 class="offcanvas-title ms-1 text-primary" id="offcanvasNavbarLabel">Fanaka</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Notifications</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Target
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Daily Target</a></li>
+                    <li><a class="dropdown-item" href="#">Monthly Target</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Target charts</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <form class="d-flex mt-3" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="d-flex flex-column flex-lgR-row h-90" id="content-wrapper">
+        <div class="container p-3">
+          <div class=" d-flex flex-column justify-content-center">
+            <div>
+              <h1 class="m-0 text-center text-info">Monthly Collection Target</h1>
+              <h1 class="text-center text-light"><b>50,000</b></h1>
+            </div>
+            <div class="d-flex flex-column flex-sm-row justify-content-center justify-content-lg-even" id="current-rate">
+              <div class="card bg-dark" id="timerCounter">
+                <div class="card-body d-flex justify-content-around flex-column align-items-center" id="actual">
+                  <h5 class="card-title m-0 text-light">Actual collection as of today</h5>
+                  <div class="bg-primary d-flex align-items-center justify-content-center rounded-circle px-5 my-3" style="width: 15px; height: 100px;">
+                    <p class="m-0 text-light">Y</p>
+                  </div>
+                  <div class="d-flex justify-content-center flex-column flex-sm-row">
+                    <div class="card m-1">
+                      <div class="card-body p-0 text-center" style="width: 120px;">
+                        <h5 class="card-title m-0">Today</h5>
+                        <p class="card-text">12:50pm</p>
+                      </div>
+                    </div>
+                    <div class="card m-1 p-0">
+                      <div class="card-body p-0 text-center" style="width: 120px;">
+                        <h5 class="card-title m-0">Remaining</h5>
+                        <p class="card-text">12:10:54</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card d-flex align-items-center justify-content-center py-4 bg-primary" style="height: inherit;" id="green">
+                <div>
+                  <h1 class="card-title text-light">50%</h1>
+                  <p class="card-text text-light text-center">on Target</p>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+          <div id="charts" class=" p-2 mt-1">
+            <div id="daily-rate" class="m-1 card bg-black border border-3 border-dark rounded h-100 d-flex align-items-center flex-column">
+              <div class="container">
+                <p class="text-center text-light m-0">Daily Target Collection Rate</p>
+                <div class="d-flex justify-content-around">
+                    <div class="">
+                        <canvas id="dailyTargetChart"></canvas>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <div id="weekly-rate" class="border border-3 border-dark rounded m-1">
+              <div class="container d-flex flex-column justify-content-around h-100">
+                <h4 class="text-center text-light">Weekly Target</h4>
+                <div class="justify-content-center">
+                    <span class="d-flex justify-content-between w-100">
+                       <p class="m-0 text-primary">Collection progress</p>
+                       <div class="d-flex align-items-center">
+                        <img src="Assets\decline-icon.png" alt="" style="width: 20px; height: 15px;">
+                        <p class="d-inline-block my-0 mx-2 text-warning">-32%</p>
+                       </div> 
+                    </span>
+                    <span class="d-flex justify-content-between w-100">
+                      <p class="m-0 text-primary">Total Expected</p>
+                      <div class="d-flex align-items-center text-light">
+                       <p class="d-inline-block my-0 mx-2">zmw12,500</p>
+                      </div> 
+                    </span>
+                    <span class="d-flex justify-content-between w-100">
+                      <p class="m-0 text-primary">Collected</p>
+                      <div class="d-flex align-items-center text-light">
+                       <p class="d-inline-block my-0 mx-2">zmw4,000</p>
+                      </div> 
+                    </span>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+        <div class="d-flex flex-column" id="sideBar">
+          <div class="bg-dark vh-15 mt-2 rounded d-flex flex-column justify-content-center align-items-center">
+            <p class="text-light text-center m-0">Collection Target as of day X</p>
+            <h2 class="text-primary text-center"><b>50,000/X</b></h2>
+          </div>
+          <div class="d-flex justify-content-center" id="monthlyReminders">
+            <div class=" text-light bg-black rounded border border-dark m-2 p-3 w-100" id="monthlyCtx">
+              <h5 class="card-title mb-2 text-center">Previous Monthly Targets</h5>
+              <div class="card-body text-center d-flex flex-column justify-content-center align-items-center">
+                <select class="form-select form-select-sm mb-3 form-select-info" aria-label="Month selection" id="monthSelection">
+                  <option selected>September</option>
+                  <option value="1">October</option>
+                  <option value="2">November</option>
+                </select>
+                <div class="d-flex w-100">
+                  <div class="w-50">
+                    <canvas id="monthlyTargetChart"></canvas>
+                  </div>
+                  <div class="d-flex flex-column justify-content-start w-100 align-items-start my-2 mx-2">
+                    <p class="text-secondary">■ Target</p>
+                    <p class="text-info">■ Remaining</p>
+                    <p class="text-primary">■ Achieved</p>
+                </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-body h-50 w-100 p-2 rounded d-flex flex-column align-items-center" id="reminders">
+              <div class="d-flex flex-row justify-content-between w-100">
+                <p class="text-light text-center m-0">Clients in Arrears</p>
+                <p class="text-info">Manage All ></p>
+              </div>
+              <div class="w-70 h-80 d-flex flex-column justify-content-around">
+                <div class="d-flex flex-column justify-content-between">
+                  <div class="card-body text-light bg-primary w-100 rounded">
+                    <p class="card-title m-0 text-center">Kevin Josh</p>
+                    <p class="card-text m-0 text-center">1,500 paid of 3,500</p>
+                  </div>
+                  <div class="card-body text-light bg-primary w-100 rounded my-2">
+                    <p class="card-title m-0 text-center">Andrew Jeje</p>
+                    <p class="card-text m-0 text-center">2,000 paid of 2,500</p>
+                  </div>
+                </div>
+                <div class="btn btn-dark text-light rounded">
+                  <p class="m-0 text-center">ADD REMINDER</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="dailycharts.js"></script>
+  <script src="monthlycharts.js"></script>
+</body>
+</html>

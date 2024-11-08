@@ -1,0 +1,126 @@
+
+
+$primary:       #58BA47;
+$secondary:     #7F858D;
+$info:          #118ad0;
+$warning:       #BC3910;
+$danger:        #e9d313;
+$light:         #ffffff;
+$dark:          #1E1E1E;
+$success:       #383C41;
+$black:         #0D0E0E;
+
+
+
+      
+      
+@import '../node_modules/bootstrap/scss/functions'; 
+@import '../node_modules/bootstrap/scss/bootstrap-utilities.scss';
+@import '../node_modules/bootstrap/scss/variables';
+$custom-grid-breakpoints: (
+  sm: 605px,
+  lgR: 1115px
+);
+
+$grid-breakpoints: map-merge(
+  $grid-breakpoints,$custom-grid-breakpoints
+);
+$utilities: map-merge(
+  $utilities,
+  (
+    "width": map-merge(
+      map-get($utilities, "width"),
+      (
+        values: map-merge(
+          map-get(map-get($utilities, "width"), "values"),
+          (
+           6:6.5%,
+          10: 10%,
+          15: 15%,
+          20: 20%,
+          30: 30%,
+          40: 40%,
+          60: 60%,
+          70: 70%,
+          80: 80%,
+          90: 90%,
+          )
+        ),
+      ),
+    ),
+    "height": map-merge(
+      map-get($utilities, "height"),
+      (
+        values: map-merge(
+          map-get(map-get($utilities, "height"), "values"),
+          (
+           6:6.5%,
+          10: 10%,
+          15: 15%,
+          20: 20%,
+          30: 30%,
+          40: 40%,
+          60: 60%,
+          70: 70%,
+          80: 80%,
+          90: 90%,
+          )
+        ),
+      ),
+    ),
+    "viewport-height": map-merge(
+      map-get($utilities, "viewport-height"),
+      (
+        values: map-merge(
+          map-get(map-get($utilities, "viewport-height"), "values"),
+          (
+           6:6.5vh,
+          10: 10vh,
+          12: 12vh,
+          15: 15vh,
+          20: 20vh,
+          25: 25vh,
+          30: 30vh,
+          40: 40vh,
+          50: 50vh,
+          60: 60vh,
+          70: 70vh,
+          75: 75vh,
+          80: 80vh,
+          90: 90vh,
+          )
+        ),
+      ),
+    ),
+    "viewport-width": map-merge(
+      map-get($utilities, "viewport-width"),
+      (
+        values: map-merge(
+          map-get(map-get($utilities, "viewport-width"), "values"),
+          (
+           6:6.5vw,
+           5:  5vw,
+           7:  7vw,
+          10: 10vw,
+          15: 15vw,
+          20: 20vw,
+          25: 25vw,
+          30: 30vw,
+          40: 40vw,
+          50: 50vw,
+          60: 60vw,
+          70: 70vw,
+          75: 75vw,
+          80: 80vw,
+          90: 90vw,
+          )
+        ),
+      ),
+    ),
+  )
+);
+
+          
+
+//import bootstrap
+@import '../node_modules/bootstrap/scss/bootstrap';
